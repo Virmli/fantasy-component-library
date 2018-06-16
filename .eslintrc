@@ -1,0 +1,30 @@
+{
+  "extends": "airbnb-base", //used to be
+  "plugins": [
+    "import",
+    "react"
+  ],
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules":{
+    "indent": ["error", 4],
+    "max-len": ["error", { "code": 200 }],
+    "no-param-reassign": "warn",
+    "prefer-arrow-callback": "warn",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "comma-dangle": ["error", {
+      "functions": "ignore"
+    }],
+    "react/jsx-uses-vars": "error"
+  }
+}
